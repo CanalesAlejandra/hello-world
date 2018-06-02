@@ -1,0 +1,13 @@
+<!DOCTYPE html> 
+<html>
+<body>
+
+<h3> Hi, my name is Lilo, and these are my friends  </h3>
+
+<p id="try"></p>
+
+<script> 
+var friends = ["Nani", "Stitch", "Jumba", "Pleakley", "Cobra Bubbles", "David"];
+var i;
+var text = ""; 
+for (i = 0; i < friends.length; i++) {
