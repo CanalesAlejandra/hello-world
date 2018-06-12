@@ -4,10 +4,19 @@
 
 <h3> Hi, my name is Lilo, and these are my friends  </h3>
 
-<p id="try"></p>
+<p id="Lilo"></p>
 
 <script> 
 var friends = ["Nani", "Stitch", "Jumba", "Pleakley", "Cobra Bubbles", "David"];
 var i;
 var text = ""; 
 for (i = 0; i < friends.length; i++) {
+   text += friends[i] + "<br>";
+   }
+document.getElementById("Lilo").innerHTML = text;
+
+
+</script>
+
+</body>
+</html>
