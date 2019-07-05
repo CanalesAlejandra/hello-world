@@ -88,4 +88,46 @@ function anArray(){
  
  /***************************Arrays*********************************************/
  
+ <!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+ var name = new Array();
+ var phone = new Array();
+function array() {
+  var inputArrayName = document.getElementById('inputArrayName').value;
+  var inputArrayCell = document.getElementById('inputArrayCell').value;
+    names.push(inputArrayName);
+    document.getElementById("inputArray1").value = " ";
+    phone.push(inputArrayCell);
+    document.getElementById("inputArray2").value = " ";
+    document.getElementById("arrayTrial1").innerHTML = name + "  ";
+    document.getElementById("arrayTrial2").innerHTML = phone + "  ";
+}
+function clearArray() {
+  name = [];
+  phone = [];
+  document.getElementById("arrayTrial1").innerHTML = names;
+  document.getElementById("arrayTrial2").innerHTML = phone;
+}
+
+</script>
+
+</head>
+<body>
+  <div class="array">
+ 
+ <p>Add your name and emergency contact numbers</p>
+  Name:<input type="input" id="inputArrayName"> <br>
+  Cell:<input type="input" id="inputArrayCell"><br>
+<button type="button" onclick="array();">Add</button>
+<button type="button" onclick="clearArray();">Reset</button>
+ <div id="arrayTrial1"></div>
+ <div id="arrayTrial2"></div>
+
+
+
+</body>
+</html>
  
