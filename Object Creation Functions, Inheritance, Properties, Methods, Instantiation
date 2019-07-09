@@ -1,0 +1,62 @@
+// Inheritance
+//Allows an object to inherit features from a parent object
+var inner = {first: "Mercury", second: "Venus", third: "Earth", fourth: "Mars", fifth: "Jupiter"};
+var system = {sixth: "Saturn", seventh: "Uranus", eighth: "Neptune"};
+Object.setPrototypeOf(system, inner);
+//"system" has now inherited "inner" properties, while still maintaining its own properties
+//Now, the properties of system would look like this:
+
+system.first: "Mercury"
+system.second: "Venus"
+system.third: "Earth"
+system.fourth: "Mars"
+system.fifth: "Jupiter"
+system.sixth: "Saturn"
+system.seventh: "Uranus"
+system.eighth: "Neptune"
+
+//and sometimes Pluto
+
+
+//Properties
+// Properties are values that are connected with an object. They are made up of a key name and a value
+// and are used to define the characteristics of the object
+
+var cropData = new object();
+cropData.getWheatInStore = "500"
+cropData.getPopulation = "300"
+cropData.getAcresOwned = "1000"
+
+
+
+
+//Methods
+// actions that can be performed by an object and are stored in an object as a function to run, instead of a value. 
+
+
+ var humanoid =
+            {
+                firstName: "Alejandra",
+                lastName: "Canales",
+                day: 25,
+                month: 05,
+                year: 1995,
+                email: alejastephanie1d@gmail.com
+                emergency contact number: 786-555-4658
+             
+               
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                },
+                dateOfBirth: function () {
+                    return this.month + "/" + this.day + "/" + this.year;
+                },    
+                email: function (){
+                    return this.email
+                    }
+                };
+
+
+
+//Instantiation
+
