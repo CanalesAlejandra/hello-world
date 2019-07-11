@@ -59,4 +59,17 @@ cropData.getAcresOwned = "1000"
 
 
 //Instantiation
+// creates an instance of an object, assigned a name and created in memory.
+
+function Patient(name, birthday, phone, insurance, allergies){
+this.name = name; 
+this.birthday = birthday; 
+this.phone = phone;
+this.insurance = insurance;
+this.allergies = allergies;
+     }
+
+//with this you are able to create new objects, while using the keyword new. For example, to create a new patient, 
+
+var chrisTraeger = new Patient("Chris Traeger", "090287", 8765559897", "Medicaid", "squirrels");
 
