@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>JSON Parse and Stringify</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+<script type="text/javascript">
+  
+  
+var list = new Array();
+  
+function locStorage() {
+  
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("outPutStorage").innerHTML = "Your list has " + localStorage.clickcount + " items so far.";
+    }
+}
+
+ function myList() { 
+    list.push(document.getElementById('input').value);
+   document.getElementById('input').value = '';
+   document.getElementById('output1').innerHTML = list;
+    list = JSON.stringify(list);
+    document.getElementById('output2').innerHTML = list;
+    list = JSON.parse(list);
+   var output = '';
+   
+   for (var i = 0; i < list.length; i++) {
+   	output += list[i] + "<br>";
+   }
+   document.getElementById('output3').innerHTML = output;
+    locStorage();
+    
+}
+       
+</script>
+</head>
+<body>
+
+        <h3>Add your grocery list using the input box down below</h3> <br>
+             <p id="outPutStorage"></p>
+            <input type="input" id="input">
+            <button type="button" onclick="myList();" >Add List</button>
+            
+  <h4>Check out how your list grows below!</h4>
+            <div id="output1"></div>
+            <h4>Example of Stringify List:</h4>    
+            <div id="output2"></div>
+            <h4> Example of Parse List </h4>
+            <div id="output3"></div>
+           
+    </body>
+</html>
