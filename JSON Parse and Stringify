@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>JSON Parse and Stringify</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+ <title>JSON Parse/Stringify</title>
+
 <script type="text/javascript">
   
   
