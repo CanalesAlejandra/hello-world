@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="idiN0"></div>
+<script>
+var xmlhttp = new XMLHttpRequest();
+var dinos = "myDinos.txt";
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myDinos = JSON.parse(this.responseText);
+    myFunction(myDinos);
+  }
+};
+xmlhttp.open("GET", dinos, true);
+xmlhttp.send();
+
+function myFunction(myDinos) {
+  var out = "";
+  var i;
+  for(i = 0; i < arr.length; i++) {
+    out += '<a href="' + arr[i].url + '">' + 
+    arr[i].display + '</a><br>';
+  }
+  document.getElementById("idiN0").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
